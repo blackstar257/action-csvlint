@@ -13,4 +13,5 @@ RUN curl -L https://github.com/Clever/csvlint/releases/download/0.2.0/csvlint-v0
     && chmod +x /usr/local/sbin/csvlint 
 
 ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
