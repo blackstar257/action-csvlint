@@ -1,0 +1,9 @@
+name: "csv-lint"
+description: "Run CSV Lint"
+author: "Kyle Umstatter"
+branding:
+  icon: "file-text"
+  color: "gray-dark"
+runs:
+  using: "docker"
+  image: "Dockerfile"
