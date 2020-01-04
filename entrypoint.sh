@@ -22,9 +22,9 @@ fi
 >&2 echo "==> Linting ${ACTION_STATE_PATH}…"
 
 if [ -d "${ACTION_STATE_PATH}" ]; then
-  /usr/local/sbin/csvlint  `find "${ACTION_STATE_PATH}" -type f -name data.csv`
+  /usr/local/sbin/csvlint --lazyquotes `find "${ACTION_STATE_PATH}" -type f -name data.csv`
 else
-  /usr/local/sbin/csvlint  "${ACTION_STATE_PATH}"
+  /usr/local/sbin/csvlint --lazyquotes "${ACTION_STATE_PATH}"
 fi
 
 >&2 echo
