@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 LABEL version="0.3.0"
-LABEL repository="http://github.com/blackstar257/docker-csvlint"
-LABEL homepage="http://github.com/blackstar257/docker-csvlint"
+LABEL repository="http://github.com/blackstar257/action-csvlint"
+LABEL homepage="http://github.com/blackstar257/action-csvlint"
 LABEL maintainer="Kyle Umstatter <blackstar257@gmail.com>"
 
 RUN apt-get update \
